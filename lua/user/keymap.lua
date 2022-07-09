@@ -4,8 +4,8 @@ lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<C-e>"] = ":NvimTreeFocus<cr>"
 lvim.keys.normal_mode["<C-]>"] = "<cmd>lua vim.lsp.buf.definition()<cr>"
 -- buffer switch
-lvim.keys.normal_mode["<C-b>"] = ":bn<cr>"
-lvim.keys.normal_mode["<C-p>"] = ":bp<cr>"
+lvim.keys.normal_mode["N"] = ":bn<cr>"
+lvim.keys.normal_mode["P"] = ":bp<cr>"
 
 lvim.builtin.which_key.mappings["C"] = {
   name = "CMake",
