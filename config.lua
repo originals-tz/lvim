@@ -3,10 +3,7 @@ lvim.log.level = "warn"
 lvim.format_on_save = true
 require "user.clang"
 
--- theme
-vim.g.github_comment_style = "NONE"
-lvim.colorscheme = "github_light"
-
+lvim.colorscheme = "duskfox"
 vim.g.nord_contrast = true
 vim.g.nord_borders = false
 vim.g.nord_disable_background = false
@@ -74,10 +71,7 @@ lvim.plugins = {
   { "hrsh7th/cmp-nvim-lsp-signature-help" },
   { "vim-scripts/DoxygenToolkit.vim" },
   { "Badhi/nvim-treesitter-cpp-tools" },
-  { "sainnhe/edge" },
-  { "sainnhe/sonokai" },
   { "cdelledonne/vim-cmake" },
-  { "shaunsingh/nord.nvim" },
-  { "projekt0n/github-nvim-theme" },
-  { "kdheepak/lazygit.nvim" }
+  { "kdheepak/lazygit.nvim" },
+  { "EdenEast/nightfox.nvim" },
 }
