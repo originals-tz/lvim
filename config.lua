@@ -72,4 +72,5 @@ lvim.plugins = {
   { "cdelledonne/vim-cmake" },
   { "shaunsingh/nord.nvim" },
   { "projekt0n/github-nvim-theme" },
+  { "kdheepak/lazygit.nvim" }
 }
