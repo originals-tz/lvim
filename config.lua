@@ -18,7 +18,14 @@ require 'nvim-treesitter.install'.compilers = { "clang++" }
 lvim.leader = "space"
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<space>d"] = ":Dox<cr>"
+lvim.keys.normal_mode["<space>G"] = ":LazyGit<cr>"
 lvim.keys.normal_mode["<C-e>"] = ":NvimTreeFocus<cr>"
+lvim.builtin.which_key.mappings["C"] = {
+  name = "CMake",
+  g = { "<cmd>CMakeGenerate<CR>", "Generate" },
+  b = { "<cmd>CMakeBuild --parallel 128<CR>", "Build" },
+  c = { "<cmd>CMakeClean<CR>", "Clean" },
+}
 
 
 -- buffer switch
