@@ -15,7 +15,7 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', '<C-]>', vim.lsp.buf.definition, bufopts)
   vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
   vim.keymap.set('n', '<C-;>', vim.lsp.buf.rename, bufopts)
-  vim.keymap.set('n', '<space>lr', vim.lsp.buf.references, bufopts)
+  vim.keymap.set('n', '<space>lR', vim.lsp.buf.references, bufopts)
 end
 
 -- require('lspconfig')['ccls'].setup { on_attach = on_attach, }

@@ -4,7 +4,8 @@ lvim.format_on_save = true
 require "user.clang"
 
 -- theme
-lvim.colorscheme = "nord"
+lvim.colorscheme = "github_light"
+
 vim.g.nord_contrast = true
 vim.g.nord_borders = false
 vim.g.nord_disable_background = false
@@ -15,6 +16,7 @@ require 'nvim-treesitter.install'.compilers = { "clang++" }
 
 lvim.leader = "space"
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
+lvim.keys.normal_mode["<space>d"] = ":Dox<cr>"
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
 lvim.builtin.notify.active = true
@@ -56,9 +58,11 @@ lvim.plugins = {
   { "ray-x/lsp_signature.nvim" },
   { "hrsh7th/cmp-nvim-lsp-signature-help" },
   { "vim-scripts/DoxygenToolkit.vim" },
+  { "Badhi/nvim-treesitter-cpp-tools" },
   { "sainnhe/edge" },
   { "sainnhe/sonokai" },
   { "cdelledonne/vim-cmake" },
   { "shaunsingh/nord.nvim" },
+  { "projekt0n/github-nvim-theme" },
 
 }
