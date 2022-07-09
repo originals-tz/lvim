@@ -23,6 +23,8 @@ lvim.builtin.which_key.mappings["C"] = {
   b = { "<cmd>CMakeBuild --parallel 128<CR>", "Build" },
   c = { "<cmd>CMakeClean<CR>", "Clean" },
 }
+local actions = require "telescope.actions"
+lvim.builtin.telescope.defaults.mappings.i["<CR>"] = actions.select_default
 
 
 -- buffer switch
