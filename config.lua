@@ -4,7 +4,7 @@ lvim.format_on_save = true
 require "user.clang"
 
 -- theme
-vim.g.github_comment_style = "bold"
+vim.g.github_comment_style = "NONE"
 lvim.colorscheme = "github_light"
 
 vim.g.nord_contrast = true
@@ -19,6 +19,7 @@ lvim.leader = "space"
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<space>d"] = ":Dox<cr>"
 lvim.keys.normal_mode["<C-e>"] = ":NvimTreeFocus<cr>"
+
 
 -- buffer switch
 lvim.keys.normal_mode["<C-b>"] = ":bn<cr>"
@@ -71,5 +72,4 @@ lvim.plugins = {
   { "cdelledonne/vim-cmake" },
   { "shaunsingh/nord.nvim" },
   { "projekt0n/github-nvim-theme" },
-
 }

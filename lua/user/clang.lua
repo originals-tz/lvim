@@ -15,7 +15,13 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', '<C-]>', vim.lsp.buf.definition, bufopts)
   vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
   vim.keymap.set('n', '<C-;>', vim.lsp.buf.rename, bufopts)
-  vim.keymap.set('n', '<space>lR', vim.lsp.buf.references, bufopts)
+
+  local wk = require("which-key")
+  wk.register({
+    ["<leader>l"] = {
+      R = { "<cmd>lua vim.lsp.buf.references()<CR>", "References" },
+    },
+  })
 end
 
 -- require('lspconfig')['ccls'].setup { on_attach = on_attach, }
