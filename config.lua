@@ -4,6 +4,7 @@ lvim.format_on_save = true
 require "user.clang"
 
 -- theme
+vim.g.github_comment_style = "bold"
 lvim.colorscheme = "github_light"
 
 vim.g.nord_contrast = true
@@ -17,6 +18,12 @@ require 'nvim-treesitter.install'.compilers = { "clang++" }
 lvim.leader = "space"
 lvim.keys.normal_mode["<C-s>"] = ":w<cr>"
 lvim.keys.normal_mode["<space>d"] = ":Dox<cr>"
+lvim.keys.normal_mode["<C-e>"] = ":NvimTreeFocus<cr>"
+
+-- buffer switch
+lvim.keys.normal_mode["<C-b>"] = ":bn<cr>"
+lvim.keys.normal_mode["<C-p>"] = ":bp<cr>"
+
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
 lvim.builtin.notify.active = true
