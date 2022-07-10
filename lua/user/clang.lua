@@ -8,15 +8,6 @@ local on_attach = function(client, bufnr)
       handler_opts = { border = "rounded" },
     },
     bufnr)
-
-  -- Mappings.
-  -- See `:help vim.lsp.*` for documentation on any of the below functions
-  local wk = require("which-key")
-  wk.register({
-    ["<leader>l"] = {
-      R = { "<cmd>lua vim.lsp.buf.references()<CR>", "References" },
-    },
-  })
 end
 
 -- require('lspconfig')['ccls'].setup { on_attach = on_attach, }
