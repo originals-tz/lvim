@@ -2,6 +2,9 @@ lvim.log.level = "warn"
 lvim.format_on_save = true
 lvim.colorscheme = "duskfox"
 lvim.leader = "space"
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+
 
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
@@ -14,6 +17,7 @@ lvim.builtin.nvimtree.adaptive_size = true
 require 'nvim-treesitter.install'.compilers = { "clang++" }
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
+lvim.builtin.treesitter.indent = { enable = true, disable = { "c", "cpp" } }
 lvim.builtin.treesitter.ensure_installed = {
   "bash",
   "c",
