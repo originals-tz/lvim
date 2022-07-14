@@ -70,3 +70,10 @@ require "user.ufo"
 lvim.builtin.lualine.options.theme = 'tokyonight'
 lvim.builtin.lualine.options.component_separators = ''
 lvim.builtin.lualine.options.section_separators = { left = '', right = '' }
+
+lvim.builtin.bufferline.options.mode = "buffers"
+lvim.builtin.bufferline.options.show_buffer_close_icons = false
+-- lvim.builtin.bufferline.options.show_buffer_icons = false
+lvim.builtin.bufferline.options.separator_style = "slant"
+lvim.builtin.bufferline.options.offsets = { { filetype = "NvimTree", text = " Explorer", text_align = "center" } }
+lvim.builtin.bufferline.options.always_show_bufferline = true
