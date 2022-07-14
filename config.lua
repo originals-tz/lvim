@@ -1,6 +1,7 @@
 lvim.log.level = "warn"
-lvim.format_on_save = true
-lvim.colorscheme = "duskfox"
+lvim.format_on_save = false
+lvim.colorscheme = "tokyonight"
+vim.g.tokyonight_style = "night"
 lvim.leader = "space"
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
@@ -19,20 +20,20 @@ lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
 lvim.builtin.treesitter.indent = { enable = true, disable = { "c", "cpp" } }
 lvim.builtin.treesitter.ensure_installed = {
-  "bash",
-  "c",
-  "cpp",
-  "cmake",
-  "javascript",
-  "json",
-  "lua",
-  "python",
-  "typescript",
-  "tsx",
-  "css",
-  "rust",
-  "java",
-  "yaml",
+    "bash",
+    "c",
+    "cpp",
+    "cmake",
+    "javascript",
+    "json",
+    "lua",
+    "python",
+    "typescript",
+    "tsx",
+    "css",
+    "rust",
+    "java",
+    "yaml",
 }
 
 -- Code Actions
@@ -40,22 +41,22 @@ local actions = require "telescope.actions"
 lvim.builtin.telescope.defaults.mappings.i["<CR>"] = actions.select_default
 
 lvim.plugins = {
-  { "hrsh7th/vim-vsnip" },
-  { "hrsh7th/cmp-vsnip" },
-  { "junnplus/nvim-lsp-setup" },
-  { "p00f/clangd_extensions.nvim" },
-  { "phaazon/hop.nvim" },
-  { "luochen1990/rainbow" },
-  { "lukas-reineke/cmp-rg" },
-  { "lukas-reineke/indent-blankline.nvim" },
-  { "folke/trouble.nvim" },
-  { "ray-x/lsp_signature.nvim" },
-  { "hrsh7th/cmp-nvim-lsp-signature-help" },
-  { "vim-scripts/DoxygenToolkit.vim" },
-  { "Badhi/nvim-treesitter-cpp-tools" },
-  { "cdelledonne/vim-cmake" },
-  { "kdheepak/lazygit.nvim" },
-  { "EdenEast/nightfox.nvim" },
+    { "hrsh7th/vim-vsnip" },
+    { "hrsh7th/cmp-vsnip" },
+    { "junnplus/nvim-lsp-setup" },
+    { "p00f/clangd_extensions.nvim" },
+    { "phaazon/hop.nvim" },
+    { "luochen1990/rainbow" },
+    { "lukas-reineke/cmp-rg" },
+    { "lukas-reineke/indent-blankline.nvim" },
+    { "folke/trouble.nvim" },
+    { "ray-x/lsp_signature.nvim" },
+    { "hrsh7th/cmp-nvim-lsp-signature-help" },
+    { "vim-scripts/DoxygenToolkit.vim" },
+    { "Badhi/nvim-treesitter-cpp-tools" },
+    { "cdelledonne/vim-cmake" },
+    { "kdheepak/lazygit.nvim" },
+    { "EdenEast/nightfox.nvim" },
 }
 
 require "user.clang"
