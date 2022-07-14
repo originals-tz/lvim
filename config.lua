@@ -57,9 +57,16 @@ lvim.plugins = {
     { "cdelledonne/vim-cmake" },
     { "kdheepak/lazygit.nvim" },
     { "folke/tokyonight.nvim" },
-    { "ellisonleao/glow.nvim" }
+    { "ellisonleao/glow.nvim" },
+    { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' },
 }
-
 require "user.clang"
 require "user.hop"
 require "user.keymap"
+require "user.ufo"
+
+-- lvim.builtin.lualine.style = 'lvim'
+
+lvim.builtin.lualine.options.theme = 'tokyonight'
+lvim.builtin.lualine.options.component_separators = ''
+lvim.builtin.lualine.options.section_separators = { left = '', right = '' }
