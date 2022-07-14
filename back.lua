@@ -1,5 +1,5 @@
 lvim.log.level = "warn"
-lvim.format_on_save = true
+lvim.format_on_save = false
 lvim.colorscheme = "tokyonight"
 vim.g.tokyonight_style = "night"
 lvim.leader = "space"
@@ -56,8 +56,7 @@ lvim.plugins = {
     { "Badhi/nvim-treesitter-cpp-tools" },
     { "cdelledonne/vim-cmake" },
     { "kdheepak/lazygit.nvim" },
-    { "folke/tokyonight.nvim" },
-    { "ellisonleao/glow.nvim" }
+    { "EdenEast/nightfox.nvim" },
 }
 
 require "user.clang"
