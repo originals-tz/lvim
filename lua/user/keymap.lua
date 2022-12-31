@@ -10,7 +10,7 @@ lvim.keys.normal_mode["P"] = ":bp<cr>"
 
 lvim.builtin.which_key.mappings["lR"] = { "<cmd>lua vim.lsp.buf.references()<CR>", "References" }
 lvim.builtin.which_key.mappings["ls"] = { "<cmd>ClangdSwitchSourceHeader<CR>", "Switch[Header/Source]" }
-lvim.builtin.which_key.mappings["<C-W>"] = { "<cmd>$quit<CR>", "Quit Last Window" }
+lvim.builtin.which_key.mappings["x"] = { "<cmd>$quit<CR>", "Quit Last Window" }
 lvim.builtin.which_key.mappings["C"] = {
     name = "CMake",
     g = { "<cmd>CMakeGenerate<CR>", "Generate" },
