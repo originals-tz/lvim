@@ -18,4 +18,9 @@ lvim.builtin.which_key.mappings["C"] = {
     c = { "<cmd>CMakeClean<CR>", "Clean" },
     t = {'<cmd>TermExec dir="Debug" cmd="make -j && ctest --verbose"<CR>', "CTest"}
 }
+
+lvim.builtin.which_key.mappings["R"] = {
+    name = "Runner",
+    r = {"<cmd>RunCode<CR>", "RunCode"}
+}
 lvim.keys.normal_mode["s"] = ":HopWord<cr>"

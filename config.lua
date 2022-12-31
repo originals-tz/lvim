@@ -1,7 +1,7 @@
 lvim.log.level = "warn"
 lvim.format_on_save = true
-lvim.colorscheme = "tokyonight"
-vim.g.tokyonight_style = "night"
+--lvim.colorscheme = "tokyonight"
+--vim.g.tokyonight_style = "night"
 lvim.leader = "space"
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
@@ -12,7 +12,7 @@ lvim.builtin.alpha.mode = "dashboard"
 lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
-lvim.builtin.nvimtree.show_icons.git = true
+-- lvim.builtin.nvimtree.show_icons.git = true
 lvim.builtin.nvimtree.adaptive_size = true
 
 require 'nvim-treesitter.install'.compilers = { "clang++" }
@@ -59,11 +59,13 @@ lvim.plugins = {
     { "folke/tokyonight.nvim" },
     { "ellisonleao/glow.nvim" },
     { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' },
+    { 'CRAG666/code_runner.nvim', requires = 'nvim-lua/plenary.nvim' },
 }
 require "user.clang"
 require "user.hop"
 require "user.keymap"
 require "user.ufo"
+require "user.code"
 
 -- lvim.builtin.lualine.style = 'lvim'
 
