@@ -14,7 +14,7 @@ lvim.builtin.which_key.mappings["x"] = { "<cmd>$quit<CR>", "Quit Last Window" }
 lvim.builtin.which_key.mappings["C"] = {
     name = "CMake",
     g = { "<cmd>CMakeGenerate<CR>", "Generate" },
-    b = { "<cmd>CMakeBuild --parallel 128<CR>", "Build" },
+    b = { "<cmd>CMakeBuild<CR>", "Build" },
     c = { "<cmd>CMakeClean<CR>", "Clean" },
     t = {'<cmd>TermExec dir="Debug" cmd="make -j && ctest --verbose"<CR>', "CTest"}
 }

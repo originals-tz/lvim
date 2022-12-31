@@ -54,10 +54,10 @@ lvim.plugins = {
     { "hrsh7th/cmp-nvim-lsp-signature-help" },
     { "vim-scripts/DoxygenToolkit.vim" },
     { "Badhi/nvim-treesitter-cpp-tools" },
-    { "cdelledonne/vim-cmake" },
     { "kdheepak/lazygit.nvim" },
     { "folke/tokyonight.nvim" },
     { "ellisonleao/glow.nvim" },
+    {"Civitasv/cmake-tools.nvim"},
     { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' },
     { 'CRAG666/code_runner.nvim', requires = 'nvim-lua/plenary.nvim' },
 }
