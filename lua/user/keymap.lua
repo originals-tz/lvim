@@ -19,7 +19,7 @@ lvim.builtin.which_key.mappings["C"] = {
     t = {'<cmd>TermExec dir="Debug" cmd="make -j && ctest --verbose"<CR>', "CTest"}
 }
 
-lvim.builtin.which_key.mappings["R"] = {
+lvim.builtin.which_key.mappings["r"] = {
     name = "Runner",
     r = {"<cmd>RunCode<CR>", "RunCode"}
 }
