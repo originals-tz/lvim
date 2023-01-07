@@ -6,16 +6,12 @@ lvim.leader = "space"
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 
-
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
-lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
--- lvim.builtin.nvimtree.show_icons.git = true
-lvim.builtin.nvimtree.adaptive_size = true
+lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
 
-require 'nvim-treesitter.install'.compilers = { "clang++" }
 lvim.builtin.treesitter.ignore_install = { "haskell" }
 lvim.builtin.treesitter.highlight.enabled = true
 lvim.builtin.treesitter.indent = { enable = true, disable = { "c", "cpp" } }
@@ -55,9 +51,8 @@ lvim.plugins = {
     { "vim-scripts/DoxygenToolkit.vim" },
     { "Badhi/nvim-treesitter-cpp-tools" },
     { "kdheepak/lazygit.nvim" },
-    { "folke/tokyonight.nvim" },
     { "ellisonleao/glow.nvim" },
-    {"Civitasv/cmake-tools.nvim"},
+    { "Civitasv/cmake-tools.nvim" },
     { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' },
     { 'CRAG666/code_runner.nvim', requires = 'nvim-lua/plenary.nvim' },
 }
