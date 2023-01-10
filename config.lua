@@ -1,10 +1,11 @@
 lvim.log.level = "warn"
 lvim.format_on_save = true
---lvim.colorscheme = "tokyonight"
+lvim.colorscheme = "nord"
 --vim.g.tokyonight_style = "night"
 lvim.leader = "space"
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
+vim.opt.timeoutlen = 100
 
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
@@ -55,6 +56,7 @@ lvim.plugins = {
     { "Civitasv/cmake-tools.nvim" },
     { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' },
     { 'CRAG666/code_runner.nvim', requires = 'nvim-lua/plenary.nvim' },
+    { 'shaunsingh/nord.nvim' }
 }
 require "user.clang"
 require "user.hop"
@@ -64,7 +66,7 @@ require "user.code"
 
 -- lvim.builtin.lualine.style = 'lvim'
 
-lvim.builtin.lualine.options.theme = 'tokyonight'
+lvim.builtin.lualine.options.theme = 'nord'
 lvim.builtin.lualine.options.component_separators = ''
 
 lvim.builtin.bufferline.options.mode = "buffers"

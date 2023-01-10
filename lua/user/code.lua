@@ -1,7 +1,15 @@
 require('code_runner').setup({
+    mode = "float",
+    startinsert = true,
+    float = {
+        border = 'single'
+    },
     -- put here the commands by filetype
     filetype = {
-        cpp = "clang++  $fileName -o /tmp/a.out && /tmp/a.out"
+        cpp = "clang++  $fileName -o /tmp/a.out && /tmp/a.out",
+        python = "python3",
+        go = "go run",
+        sh = "sh"
     },
 })
 

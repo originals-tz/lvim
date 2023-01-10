@@ -16,11 +16,12 @@ lvim.builtin.which_key.mappings["C"] = {
     g = { "<cmd>CMakeGenerate<CR>", "Generate" },
     b = { "<cmd>CMakeBuild<CR>", "Build" },
     c = { "<cmd>CMakeClean<CR>", "Clean" },
-    t = {'<cmd>TermExec dir="Debug" cmd="make -j && ctest --verbose"<CR>', "CTest"}
+    r = { "<cmd>CMakeRun<CR>", "Run" },
+    t = { '<cmd>TermExec dir="Debug" cmd="make -j && ctest --verbose"<CR>', "CTest" }
 }
 
 lvim.builtin.which_key.mappings["r"] = {
     name = "Runner",
-    r = {"<cmd>RunCode<CR>", "RunCode"}
+    r = { "<cmd>RunCode<CR>", "RunCode" }
 }
 lvim.keys.normal_mode["s"] = ":HopWord<cr>"
