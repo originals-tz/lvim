@@ -1,15 +1,15 @@
 lvim.log.level = "warn"
 lvim.format_on_save = true
---lvim.colorscheme = "tokyonight"
+lvim.colorscheme = "nord"
 --vim.g.tokyonight_style = "night"
 lvim.leader = "space"
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
+vim.opt.timeoutlen = 100
 
 
 lvim.builtin.alpha.active = true
 lvim.builtin.alpha.mode = "dashboard"
-lvim.builtin.notify.active = true
 lvim.builtin.terminal.active = true
 lvim.builtin.nvimtree.setup.view.side = "left"
 -- lvim.builtin.nvimtree.show_icons.git = true
@@ -55,9 +55,9 @@ lvim.plugins = {
     { "vim-scripts/DoxygenToolkit.vim" },
     { "Badhi/nvim-treesitter-cpp-tools" },
     { "kdheepak/lazygit.nvim" },
-    { "folke/tokyonight.nvim" },
+    { 'shaunsingh/nord.nvim' },
     { "ellisonleao/glow.nvim" },
-    {"Civitasv/cmake-tools.nvim"},
+    { "Civitasv/cmake-tools.nvim" },
     { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' },
     { 'CRAG666/code_runner.nvim', requires = 'nvim-lua/plenary.nvim' },
 }
@@ -69,7 +69,7 @@ require "user.code"
 
 -- lvim.builtin.lualine.style = 'lvim'
 
-lvim.builtin.lualine.options.theme = 'tokyonight'
+lvim.builtin.lualine.options.theme = 'nord'
 lvim.builtin.lualine.options.component_separators = ''
 
 lvim.builtin.bufferline.options.mode = "buffers"
