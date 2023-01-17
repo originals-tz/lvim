@@ -45,7 +45,6 @@ lvim.plugins = {
     { "phaazon/hop.nvim" },
     { "luochen1990/rainbow" },
     { "lukas-reineke/cmp-rg" },
-    { "lukas-reineke/indent-blankline.nvim" },
     { "folke/trouble.nvim" },
     { "ray-x/lsp_signature.nvim" },
     { "hrsh7th/cmp-nvim-lsp-signature-help" },
@@ -56,13 +55,15 @@ lvim.plugins = {
     { "Civitasv/cmake-tools.nvim" },
     { 'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async' },
     { 'CRAG666/code_runner.nvim', requires = 'nvim-lua/plenary.nvim' },
-    { 'shaunsingh/nord.nvim' }
+    { 'shaunsingh/nord.nvim' },
 }
+
 require "user.clang"
 require "user.hop"
 require "user.keymap"
 require "user.ufo"
 require "user.code"
+
 
 -- lvim.builtin.lualine.style = 'lvim'
 
